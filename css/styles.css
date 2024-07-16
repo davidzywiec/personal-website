@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'TitleFont'; /* Name your font family */
+    src: url('../fonts/ArchivoBlack-Regular.ttf'); /* Locate the .ttf file within your directory*/
+  }
+
+.title-header-yellow {
+    font-family: 'TitleFont', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #FDC032;
+}
+
+.title-header-pink {
+  font-family: 'TitleFont', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #F90051;
+}
+
+.paragraph {
+  font-family: 'TitleFont', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #F90051;
+}
+
+.about {
+  display: flex;
+  flex-flow:column wrap;
+  justify-content: space-around;
+  align-items: baseline;
+  height:300px;
+}
+
+body {
+    /* Background color to ensure the transparent part of the gradient is visible */
+    
+    /* Creating the dots with radial gradient */
+    background-image: radial-gradient(circle, #734657 10%, #302608) 10%);
+    
+    /* Positioning and sizing the gradient to create a dot pattern */
+    background-position: 0 0;
+    background-size: 10px 10px;
+    
+    /* Ensuring the background covers the entire body */
+    height: 100vh;
+    margin: 0;
+  }
