@@ -41,74 +41,88 @@
     </section>
     <section id="about">
       <div class="container px-4 py-5" id="custom-cards">
-        <h2 class="pb-2 border-bottom">About Me</h2>    
+        <h2 class="pb-2 border-bottom">About Me</h2>
+        Select the cards to learn about me...
         <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
           <div class="col">
-            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-1.jpg');">
+            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg bulls-image" data-bs-toggle="modal" data-bs-target="#bullsModal">
               <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Chicago Based, Bulls</h3>
-                <ul class="d-flex list-unstyled mt-auto">
-                  <li class="me-auto">
-                    <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
-                  </li>
-                  <li class="d-flex align-items-center me-3">
-                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
-                    <small>Earth</small>
-                  </li>
-                  <li class="d-flex align-items-center">
-                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
-                    <small>3d</small>
-                  </li>
-                </ul>
+                <h3 class="mb-4 display-6 lh-1 fw-bold card-text">Chicago</h3>
+              </div>
+            </div>
+          </div> 
+          <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg cradle-image" data-bs-toggle="modal" data-bs-target="#cradleModal"">
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                <h3 class="mb-4 display-6 lh-1 fw-bold card-text">Interests</h3>
               </div>
             </div>
           </div>
-    
           <div class="col">
-            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-2.jpg');">
+            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg hades-image" data-bs-toggle="modal" data-bs-target="#inspiredModal">
               <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Much longer title that wraps to multiple lines</h3>
-                <ul class="d-flex list-unstyled mt-auto">
-                  <li class="me-auto">
-                    <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
-                  </li>
-                  <li class="d-flex align-items-center me-3">
-                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
-                    <small>Pakistan</small>
-                  </li>
-                  <li class="d-flex align-items-center">
-                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
-                    <small>4d</small>
-                  </li>
-                </ul>
+                <h3 class="mb-4 display-6 lh-1 fw-bold card-text">Inspired By</h3>
               </div>
             </div>
-          </div>    
-          <div class="col">
-            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-3.jpg');">
-              <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Another longer title belongs here</h3>
-                <ul class="d-flex list-unstyled mt-auto">
-                  <li class="me-auto">
-                    <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
-                  </li>
-                  <li class="d-flex align-items-center me-3">
-                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
-                    <small>California</small>
-                  </li>
-                  <li class="d-flex align-items-center">
-                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
-                    <small>5d</small>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
+          </div>  
         </div>
       </div>
     </section>
   </div>
-    <section id="interests"></section>
+  <!--Modal per Interest-->
+  <div class="modal fade" id="bullsModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalLabel">Chicago</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          I have resided in Chicago for the past five years and have developed a deep appreciation for the city. Its rich culture, vibrant sports scene, and diverse community make it an exceptional place to live.
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="cradleModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalLabel">Reader</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>
+          I am an avid reader of fantasy books, with an obsession for the Cradle series by Will Wight, where I consider myself a leading advocate for Will's success in all he does.
+          <br/><br/>
+          My interest in television is equally strong; I can discuss various shows for hours. My favorite series is Ted Lasso, which I believe has profoundly impacted my perspective and that of many people I know. The message that hope is infectious is something I believe in to my very soul.
+          <br/><br/>
+          In the realm of video games, Hades stands out as my favorite. The fact that it was developed by a small indie team serves as a daily source of inspiration for me. Video games have been a way for me to keep connected to long distance friends and family which is an important part of my life.
+          <br/><br/>
+          A recent hobby, I have developed an interest in the NBA and am an enthusiastic Chicago Bulls fan, to the extent of having invested in season tickets. 
+          </p>     
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="modal fade" id="inspiredModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalLabel">Inspired By</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>
+            I am inspired by people and art.
+            <br/><br/>
+            I think it is important to understand that everyone comes from a different place. Being an active listener who is accepting and mindful is a key component to success and leadership.
+            <br/><br/>
+            Art comes from all over but I believe video games are under appreciated form of artistic expression. What better way to make a person feel some type of emotional or phsycial reaction than for them to feel and interact with a new world that contains storytelling, adventure, action, and even puzzles. 
+            </p>     
+          </div>
+        </div>
+      </div>
+  </div>
     <section id="list"></section>
     <section id="footer"></section>
   </body>

@@ -32,11 +32,54 @@
   height:300px;
 }
 
+.bulls-image {
+  background-image: url("../images/bulls-image.jpg"); /* The image used */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  min-height: 500px;
+  cursor: pointer;
+}
+
+.cradle-image {
+  background-image: url("../images/will-wight.jpg"); /* The image used */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  min-height: 500px;
+  cursor: pointer;
+}
+
+.hades-image {
+  background-image: url("../images/hades.jpg"); /* The image used */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  min-height: 500px;
+  cursor: pointer;
+}
+
+.card-text {
+  word-wrap: break-word;  /* Allows wrapping */
+  word-break: keep-all;   /* Prevents breaking words */
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+}
+
 body {
     /* Background color to ensure the transparent part of the gradient is visible */
     
     /* Creating the dots with radial gradient */
-    background-image: radial-gradient(circle, #734657 10%, #302608) 10%);
+    background-image: radial-gradient(circle, #734657 10%, #302608) 10%;
     
     /* Positioning and sizing the gradient to create a dot pattern */
     background-position: 0 0;
